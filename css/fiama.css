@@ -1,0 +1,311 @@
+/*** INDEX PAGE***/
+#indexText{
+	float:left;/*sets the index content to the left*/
+	width: 100%;/*sets the index content width to full page*/
+	height: fit-content;/*sets the index content height to fit the content*/
+
+}
+.minibox1{
+	margin:10px 0 10px 50px;/*sets the margin-top and bottom to 10px and the right to 50px*/
+	width:93%;
+	height:100px;
+}
+.minibox2{
+	margin:10px 0 10px 0px;
+	margin-left:20%;
+	width:60%;
+	height:130px;
+	border-top: solid 3px #fa6800;
+	border-bottom: solid 3px #fa6800;
+	border-radius: .5rem .5rem .5rem .5rem;/*applys a bit of radius in the minibox*/
+	background-color:#fa6800;
+
+}
+.minibox3{
+	margin:10px 0 10px 50px;
+	width:93%; /*sets the width of the mini box so that it does not occupy the entire page*/
+	height:350px;
+}
+
+.avaliability{
+	margin-left:10%; /*adds a bit of space on the left of the box avaliability*/
+}
+.minibox4{
+	margin:10px 0 10px 10px;/*sets the margin on the top, bottom and right to 10px*/
+	margin-left:5%;
+	width:93%;
+	height:550px;
+	text-align:center;
+}
+
+.reviews{ /*comment boxes will be displayed on the left with a little rounded border, margin and padding have also been applied*/
+	float:left;
+	border-radius: .5rem .5rem .5rem .5rem;
+	border: solid 2px #fa6800;
+	margin:10px;
+	width:630px;
+	padding:1%;
+}
+.object{/*style of the small pictures in png */
+	float:left;
+	width:25%;
+	text-align:center;	
+	margin:3px;
+	height:250px;
+	margin-left:7%;
+	background-color:white;
+}
+
+.object2{/*style of the objects in the avaliability box*/
+	float:left;
+	width:fit-content;
+	height: 50px;
+	text-align:center;	
+	margin:5px;
+
+}
+.object2 input{/*adjusts the height of the inputs*/
+	height:50px;
+}
+.object3{/*sets the pictures of the minibox3*/
+	float:left;
+	width:25%;
+	text-align:center;	
+	margin:3px;
+	margin-left:7%;/*adds a bit of space on the left*/
+}
+.object3:hover{
+	opacity:.7;
+	cursor:pointer;/*change the cursor to a pointer when hovering */
+}
+.button{/*style of the button book now*/
+	border-radius: .5rem .5rem .5rem .5rem;/*rounds the button*/
+	color: white;
+	padding: 12px;
+	font-size: 15px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);/*applies a shadow on the button*/
+	text-align: center;
+	text-decoration: none;/*removes any text decoration*/
+	display: inline-block;/*displays the button as an inline-level block container*/
+	margin: 4px 2px;
+	cursor: pointer;/*changes the cursor to a pointer*/
+	background-color: #4CAF50;
+	width:100px;
+}
+.button:hover,.reviewButoon:hover{
+	opacity: 0.8;/*makes the button a bit transparent when hovering*/
+}
+.reviewButoon{
+	border-radius: .5rem .5rem .5rem .5rem;/*rounds the button*/
+	color: white;
+	padding: 12px;
+	font-size: 15px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);/*applies a shadow on the button*/
+	text-align: center;
+	text-decoration: none;/*removes any text decoration*/
+	display: inline-block;/*displays the button as an inline-level block container*/
+	margin: 4px 2px;
+	cursor: pointer;/*changes the cursor to a pointer*/
+	background-color: #eb6121;
+	width:350px;
+}
+/***RESERVATION PAGE - BY FIAMA VIANA***/
+
+#box{/*style of the main box of the form*/
+	padding: .5em .5em 0.5em;
+	border-radius: .5rem .5rem .5rem .5rem;
+	border: solid 3px #fa6800;
+	background: #d2d9dd;
+	text-align:left;
+	margin-left: 25%;
+	margin-bottom: 3%;
+	width:680px;
+	height:390px;
+	left:15%;
+
+}
+.item label{/*style of the label*/
+	color:black;
+	font-size:20px;
+}
+
+.item{/*sets a bit of space inside of each item on the top and bottom*/
+	padding: .5em 0.6em 0;
+
+}
+.section1{/*sets the section to occupy half of the box and be displayed on the left*/
+	width:50%;
+	float:left;
+}
+.section2{/*sets the section to occupy half of the box and be displayed on the right*/
+	width:50%;
+	float:right;
+}
+
+.item select,.item input, .item textarea, .avaliability input{/*sets a standard style for all inputs in the box*/
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	padding: 10px;
+	width:300px;
+	box-sizing: border-box; /* the width and height properties includes content, padding and border*/
+	-webkit-box-sizing: border-box;/*do the same as box-sizing but it is used to support older versions of Safari (< 5.1), Chrome (< 10), and Firefox (< 29)*/
+	-moz-box-sizing: border-box; /*do the same as box-sizing but it is used to support older versions of Safari (< 5.1), Chrome (< 10), and Firefox (< 29)*/
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;/*do the same as box-shadow but it is used to support older versions of Safari (< 5.1), Chrome (< 10), and Firefox (< 29)*/
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 10px;
+
+}
+.item textarea{/*sets a specif width and height to the item textarea*/
+	width:300px;
+	height:150px;
+}
+
+.item input[type=text], .item text-area{/*sets the same width to all inputs and text area*/
+	width: 300px;
+}
+.item input[type=submit]{/*different style to the input type submit*/
+	width: 100px;
+	background:#5e554e;
+	cursor: pointer;
+}
+.item p{
+	font-size:17px;
+	font-weight:bold;
+}
+
+#submitButton{/*sets the float, margin and cursor to the submit button*/
+	float:right;
+	margin-right:20px;
+	cursor: pointer;	
+}
+#submitButton:hover{
+	opacity: 0.7;
+}
+
+/*for 1500px screeen or less*/
+@media screen and (max-width: 1500px) {
+	#indexText{
+		width: 80%;
+		height: auto;
+		margin:0;
+	}
+	.reviews{
+		width: 100%;
+		height: auto;	
+	}
+	#box {
+		width:680px;
+		height:390px;
+	}
+
+	#myTotal,.item #people,.item input {
+		width:50%;
+	}
+	#indexText, .minibox1{
+		width:100%;
+		height:auto;
+		margin:0;
+	}
+	.minibox2{
+		width:90%;
+		height:130px;
+		margin-left:5%;
+	}
+	.minitbox3, .object3{
+		width:100%;
+		height:auto;
+	}
+	.object3 img{
+		width:350px;
+		height:250px;
+	}
+	.objetc{
+		height:150px;
+	}
+	.object img{
+		width:50px;
+		height:50px;
+	}
+	.minibox4{
+		width:90%;
+		height:auto;
+		margin:0
+	}
+}
+
+/* for 980px screen or less*/
+@media screen and (max-width: 980px) {
+	#box {
+		width:75%;
+		margin:0;
+		margin-left:10%;
+		height:750px;
+		margin-bottom:2%;
+	}
+	
+	#submitButton{
+	 margin-top:0;
+		
+	}
+	.section1,.section2,.section3{
+		width:100%;
+		height:auto;
+	}
+	.item{
+		width:100%;
+	}
+	text-area{
+		width:100%;
+	}
+	
+	.minibox1{
+		width:100%;
+		height:auto;
+	}
+	.minibox2{
+		width:90%;
+		height:280px;
+		text-align:center;
+		margin-left:5%;
+	}
+	
+	.minibox3{
+		margin-left:0;
+		width:100%;
+		height:auto;
+	}
+	.object{
+		margin-left:5px;
+		width:30%;
+		height:250px;
+	}
+	.object img{
+		width:25px;
+		height:25px;
+	}
+	.object2{
+		margin:0;
+		width:100%;
+		height:auto;
+	}
+	
+}
+
+/* for 768px or less, ideal for tablets styles */
+@media screen and (max-width: 768px) {
+	.item input[type=text], .item text-area, #tours{/*sets the same width to all inputs and text area*/
+	width: 250px;
+	}
+	#myTotal, #people{
+		width:150px;
+	}
+	.minibox1{
+		width:100%;
+		height:fit-content;
+	}
+}

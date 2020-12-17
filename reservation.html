@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+		<title>Reservations</title>
+		<script src="script/fiamaScript.js"></script>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/fiama.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id="pagewrap">
+			<div id="header">
+				<div class="logo">
+					<img src="gallery/logo.png" alt="logo">
+				</div>
+				<div class="navigation">
+					<ul id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="AboutUs.html">About us</a></li>
+						<li><a href="Tours.html">Tours</a></li>
+						<li><a href="reservation.html">Reservations</a></li>
+						<li><a href="Gallery.html">Gallery</a></li>
+						<li><a href="ContactUs.html">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<img src="gallery/banner.jpeg" id="banner" alt="banner">
+			</div>
+			<h1>Book your tour here</h1>
+			<div id="content">
+				<form name="reservation" action="MAILTO:yourEmailAddress" onsubmit="return validateForm();" method="post">
+					<div id="box">
+						<div class="section1">
+							<div class="item">
+								<input type="text" name="firstname" placeholder="First Name  *"/>
+							</div>
+							<div class="item">
+								<input type="text" name="lastname" placeholder="Last Name  *"/>
+							</div>
+							<div class="item">
+								<input type="text" name="email" placeholder="Email  *"/>
+							</div>
+							<div class="item">
+								<input type="text" name="phone" placeholder="Phone Number  *"/>
+							</div>
+						</div>
+						<div class="section2"> 
+							<div class="item">
+								<label for="tours">Select your tour: </label>
+								<select id="tours" onclick="return calculation()">
+									<option value="option1">Historic Tour - € 80.00 </option>
+									<option value="option2">Culture Tour - € 70.00 </option>
+									<option value="option3">Park Tour - € 50.00</option>
+									<option value="option4">Green Tour - € 70.00</option>
+								</select>
+							</div>
+							<div class="item">
+								<label for="date">Date: <span style="color:red">*</span></label>
+								<input type="date" id="date" name="date" onclick="return checkDate()">
+							</div>
+							<div class="item">
+								<label for="people">Number of people: <span style="color:red">*</span> </label>
+								<input type="text" id="people" placeholder="Quantity" oninput="return calculation()"/> 
+							</div>
+							<div class="item">
+								<label for="myTotal">Total: </label>
+								<input type="text" id="myTotal" placeholder="Total will be displayed here" onclick="return calculation()"/>
+							</div>
+						</div>
+						<div class="section1">
+							<div class="item">
+								<textarea name="comment" placeholder="Additional Details or Questions"></textarea>
+							</div>
+						</div>
+						<div class="section2">
+							<div class="item">
+								<div id="submitButton">
+									<input type="submit" value="Submit" />
+								</div>
+								<p><span style="color:red">*</span> Indicates required field.</p>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="footer">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-twitter"></a><br>
+				<a href="#" class="info" >Info .</a>
+				<a href="#" class="info" >Support .</a>
+				<a href="#" class="info" >Marketing</a><br>
+				<a href="#" class="info" >Terms of Use .</a>
+				<a href="#" class="info" >Privacy Policy</a><br>
+				<a class="info">© 2020 JLL Tours</a>
+			</div>
+		</div>
+	</body>
+</html>

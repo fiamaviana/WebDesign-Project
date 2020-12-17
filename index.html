@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+		<title>Homepage</title>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/fiama.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		<!-- This is a JQuery that creates a slide effect to show the review that is hidden -->
+			$(document).ready(function(){
+			$(".reviews").hide();
+			  $("button").click(function(){
+				$(".reviews").slideToggle();
+				$(".reviewButoon").hide();
+			  });
+			});
+		</script>
+	</head>
+	<body>
+
+		<div id="pagewrap">
+
+			<div id="header">
+				<div class="logo">
+					<img src="gallery/logo.png" alt="logo">
+				</div>
+				<div class="navigation">
+					<ul id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="AboutUs.html">About us</a></li>
+						<li><a href="Tours.html">Tours</a></li>
+						<li><a href="reservation.html">Reservations</a></li>
+						<li><a href="Gallery.html">Gallery</a></li>
+						<li><a href="ContactUs.html">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="img">
+				<img src="gallery/banner.jpeg" id="banner" alt="banner">
+			</div>
+			<h1>Welcome to Dublin!</h1>
+			<div id="content">
+				<div id="indexText">
+					<div class="minibox1">
+						We are very pleased that you are interested in visiting our city.
+						Traveling has always inspired us and now we offer the best of this
+						experience for you. <br>
+						Dublin is the largest city in the Republic of Ireland. Situated on the east coast,
+						at the mouth of the River Liffey. There are many things to do here, you will be
+						amazed at the beauty of the historic city, museums, parks, and the
+						green area, which is responsible for bringing the name of Emerald Island to the country.
+					</div>
+					<div class="minibox2">
+						<h2>Enter your dates to find available tours:</h2>
+						<div class="avaliability">
+						
+							<div class="object2">
+								<label for="date">Date: </label>
+								<input type="date" id="date" name="date">
+							</div>
+							<div class="object2">
+								<input type="text" id="quant" placeholder="Number of people"/> 
+							</div>
+							<div class="object2">
+								<button class="button" onclick="window.location.href='reservation.html';">Book Now</button>
+							</div>
+				
+						</div>
+					</div>
+					<div class="minibox3">
+						<h2>Check out our tours</h2>
+						<div class="object3">
+							<img src="gallery/photo9.jpg" alt="tour1" width="350" height="250" onclick="window.location.href='Tours.html'"/>
+						</div>
+						<div class="object3">
+							<img src="gallery/photo10.jpg" alt="tour2" width="350" height="250" onclick="window.location.href='Tours.html'"/>
+						</div>
+						<div class="object3">
+							<img src="gallery/photo2.jpg" alt="tour3" width="350" height="250" onclick="window.location.href='Tours.html'"/>
+						</div>
+					</div>
+					<div class="minibox1">
+						<h2>We are here to offer the best experience for you!</h2>
+						<div class="object">
+							<h3>Travel in comfort and style</h3>
+							<img src="gallery/bus.png" alt="bus"/>
+							<p>Bus with comfort, space and the best service you deserve</p>
+						</div>
+						<div class="object">
+							<h3>Hotel Collection & Return</h3>
+							<img src="gallery/local.png" alt="local"/>
+							<p>Enjoy door to door service & spend more time on the things that matter to you.</p>
+						</div>
+						<div class="object">
+							<h3>Specialist experts in Dublin Tours</h3>
+							<img src="gallery/map2.png" alt="map"/>
+							<p>Experienced Driver Guide</p>
+						</div>
+					</div>
+					<div class="minibox4">
+						<h2>Some of our Reviews</h2>
+						<button class="reviewButoon">Check it out</button>
+						<div class="reviews">
+							Margareth: Back home after two weeks in Dublin, I got a feeling that I
+							should have spent more time there. What a wonderful place and the tours
+							are fabulous. Thank you JFF for this incredible experience.
+							<a href="#" class="fa fa-facebook"></a>
+						</div>
+						<div class="reviews">
+							Philip: We travelled with two kids and we had such a great time, the bus is
+							very comfortable. Michal, 5 years old, could easily sleep there when
+							he felt tired. And the tour guide and Driver, Paul, is awesome, very kind 
+							and funny.
+							<a href="#" class="fa fa-facebook"></a>
+						</div>
+						<div class="reviews">
+							Marina: For sure, the best trip I have had and thanks to this amazing tour. I
+							visited all I wanted to in a good time, with no rush. I had enough time to 
+							visit the museums and Trinity College was the best for me, thank you.
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+						<div class="reviews">
+							Richard: I can't wait to visit Dublin again with you guys, you are the best tour company.
+							The guide is very charismatic  and knowledgeable. Seriously, I personally  think 
+							he knows everything about the history of Dublin. I am already planning on how to 
+							return to this wonderful country.
+							<a href="#" class="fa fa-twitter"></a><br>
+						</div>
+						<div class="reviews">
+							Alice: Unforgettable Ireland Trip! Having never been to Ireland, I reached out to
+							JJF tours to help me navigate/plan my trip. Through many emails with Fiama,
+							we planned the most wonderful journey in Dublin city.
+							<a href="#" class="fa fa-facebook"></a>
+						</div>
+						<div class="reviews">
+							Mary: While visiting Ireland last week we wanted to book a tour with a guide to 
+							ensure we were really learning and seeing all that Dublin  has to offer. 
+							Usually we do self guided type tours and I'm SO glad we chose to tour with JJF tours 
+							rather than try to get around the area on our own! We had such a fun day seeing all that
+							this area of the country has to offer.
+							<a href="#" class="fa fa-instagram"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-twitter"></a><br>
+				<a href="#" class="info" >Info .</a>
+				<a href="#" class="info" >Support .</a>
+				<a href="#" class="info" >Marketing</a><br>
+				<a href="#" class="info" >Terms of Use .</a>
+				<a href="#" class="info" >Privacy Policy</a><br>
+				<a class="info">© 2020 JLL Tours</a>
+			</div>
+
+		</div>
+
+	</body>
+</html>

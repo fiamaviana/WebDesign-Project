@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+		<title>Contact us page</title>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/Joao_Css_Pages.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	
+		<div id="pagewrap" class=".backgroundContactUs">
+			<div id="header">
+				<div class="logo">
+					<img src="gallery/logo.png" alt="logo">
+				</div>
+				<div class="navigation">
+					<ul id="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="AboutUs.html">About us</a></li>
+						<li><a href="Tours.html">Tours</a></li>
+						<li><a href="reservation.html">Reservations</a></li>
+						<li><a href="Gallery.html">Gallery</a></li>
+						<li><a href="ContactUs.html">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="img">
+				<img src="gallery/banner.jpg" id="banner" alt="image showing deer at phoenix park in dublin.">
+			</div>
+			<h1>Contact us</h1>
+			<div id="content">
+				<form name="contactUsForm" action="MAILTO:youremailaddresshere" method="post">
+					<div id="Form_ContactUs">
+										
+						<div class="contact1">
+							<input type="text" id="nameId" placeholder="Type your Forename surname" required="required" name="name"/>
+							<label for="nameId">Forename surname</label>
+						</div>
+						<div class="contact1">
+							<input type="tel" id="phoneId" placeholder="(xxx)xx-xxx-x-xxx" required="required" name="phone"/>
+							<label for="phoneId">Phone number</label>
+						</div>
+						<div class="contact1">
+							<input type="email" id="emailId" placeholder="yourEmail@mail.com" required="required" name="email"/>
+							<label for="emailId">Email</label>
+						</div>
+						<div class="contact2">
+							<textarea name="comment" required="required" placeholder="Leave your question / query"></textarea>
+						</div>
+						<div class="contact1">
+							<input type="submit" class="send" onclick="Send();" value="Send"/>
+						</div>
+					</div>	
+				</form>	
+				<div id="Icons_contact">
+					<div class="contactIcons">
+						<img src="gallery/phone.png" id="PhoneContactId" width="80" alt="phone icon"/>
+						<label for="PhoneContactId">0035312345678</label>
+					</div>
+					<div class="contactIcons">
+						<img src="gallery/mail.png" id="mailContactId" width="80" alt="mail icon"/>
+						<label for="mailContactId">jjfTours@mail.com</label>
+					</div>
+					<div class="contactIcons">
+						<img src="gallery/map.png" id="mapContactId" width="80" alt="map icon"/>
+						<label for="mapContactId">O'Connell Street Upper, Dublin</label>
+					</div>
+				</div>
+					
+			</div>
+			
+			<div id="footer">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-twitter"></a><br>
+				<a href="#" class="info" >Info .</a>
+				<a href="#" class="info" >Support .</a>
+				<a href="#" class="info" >Marketing</a><br>
+				<a href="#" class="info" >Terms of Use .</a>
+				<a href="#" class="info" >Privacy Policy</a><br>
+				<a class="info">© 2020 JLL Tours</a>
+			</div>
+
+		</div>
+
+	</body>
+</html>

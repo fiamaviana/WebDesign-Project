@@ -1,0 +1,174 @@
+/**** Layout for all pages ****/
+body {
+	font: 1em/150% Garamond, "Times New Roman", serif; /* the font standard for all body */
+}
+a {/* color and style link standard*/
+	color: blue; 
+	text-decoration: none;
+}
+a:hover {
+	color: #eb6121; /*changes the link color when hovering*/
+}
+#banner{ 
+	width: 100%; /*sets the width of the image to fill an entire page*/
+	height: auto;/*sets the heigth of the image to its normal size */
+}
+h1 {/*sets the font standard and text align*/
+	font: bold 36px/100% "Lucida Handwriting","Brush Script MT", cursive; 
+	text-align:center;
+}
+
+h2{
+	font: bold 25px/100% "Lucida Handwriting","Brush Script MT", cursive;
+	text-align:center;
+}
+
+#pagewrap {
+	width:100%;
+	background-image:url('wallpaper2.jpg');
+	background-size: cover;
+}
+
+#header { /*sets the height and color of the header*/
+	height: 50px;
+	background-color:#048025;	
+}
+.logo{ /*the logo will be displayed on the left side of the header with an unchanging position*/
+	float:left;
+	position:absolute;	
+}
+.navigation{
+	float:right;/*the navigation bar will be displayed on the right side*/
+	font-family: "Times New Roman", Times, serif;
+}
+#nav {
+	float:right;
+	width: fit-content; /*adjusts the width to the content*/ 
+	margin: 0 0 0 0; /*removes margin and padding*/ padding: 0;
+	list-style: none; /*removes bullets from the list*/
+}
+
+#nav li {
+	float: left; /*floats list items left*/
+}
+
+#nav li a {
+	display: block; /*fills up the entire list item and makes the whole area clickable*/
+	padding: 8px 15px; /*padding will space them out a bit*/
+	text-decoration: none; /*removes the underline from the anchor*/
+	font-weight: bold;
+	color: white;
+	border-right: 1px solid #ccc;/*adds a border right after each item on the navigation bar */
+}
+#nav li a:hover {
+	color: #eb6121;
+}
+
+#footer {
+	clear: both;/*sets the footer at the end of the page*/
+	background-color:#048025;
+	height: fit-content;
+	text-align:center;
+	padding:5px 0px 0px 0px;
+}
+#pagewrap, #header,#footer {
+	border: solid 3px #fa6800;/* applys a border around all contents of the page */
+}
+/* this code bellow creates round social media buttons and was learned on the website 
+ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons2 */
+.fa {
+  padding: 10px; /*creates a bit of space inside of the button*/
+  font-size: 12px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px 0px 2px;
+  border-radius: 50%;/*makes the button like a circle*/
+}
+.fa:hover {
+	opacity: 0.7;/*gives transparency to the button when hovering it*/
+}
+/*the following codes specify the color and background of each button*/
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/*adjusts font size, color and weight on the footer info*/
+.info{
+	color:black;
+	font-weight:bold;
+	font-size:13px;
+}
+
+/*for 1500px screeen or less*/
+@media screen and (max-width: 1500px) {
+	#pagewrap{
+		width: 100%;
+	}
+	.logo{
+		position:absolute;
+		width: 25%;
+		height: 25%;
+		margin-top:30px;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+	
+}
+
+/* for 980px screen or less*/
+@media screen and (max-width: 980px) {
+	#pagewrap,#content{
+		width: 100%;
+	}
+	
+	h1{
+		font-size: 25px;
+	}
+	
+	p{
+		font-size:15px;
+	}
+	
+}
+
+/* for 768px or less, ideal for tablets styles */
+@media screen and (max-width: 768px) {
+	#pagewrap {
+		width: 100%;
+		height:auto;
+	}
+	#content {
+		width: 100%;
+		height:auto;
+		float: none;
+	}
+	#nav{
+		width:100%;
+		height:auto;
+	}
+	#nav li{
+		font-size:12px;
+	}
+	
+}
+/* for 414 px or less, ideal for mobyle styles */
+@media screen and (max-width: 414px) {
+	#pagewrap {
+		width: 100%;
+	}
+	#header .navigation{
+		width: 100%;
+		height: auto;
+	}
+}

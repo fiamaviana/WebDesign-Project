@@ -1,0 +1,187 @@
+/* ABOUT US BY JOSELIA REIS */
+/*Defining the size, float margins and formatation of the div content2.*/
+#content2{
+	width:1000px;
+	float: left;
+	margin-right:10%;
+	margin-left:15%;
+	text-align:justify;
+	overflow:hidden;
+	font-family: Georgia;
+	font-size: 15px;
+}
+/*Defining the size, margins and overflow of the imagens thar are in the div content2*/
+#content2 img {
+	clear:both;
+	float:left;
+	margin: 1% 1% 1% 1%;
+	width:15%;
+	height:15%;
+	overflow: auto;
+
+}
+p.about {text-align:justify;
+		margin-top: 5%;
+
+}
+p.about1, p.about2 {text-align:justify;
+		margin-top:1%;
+}
+.aboutImage{
+	width:350px;
+	height:350px;
+}
+
+/* END ABOUT US
+*/
+/* PAGE TOUR BY JOSELIA REIS */
+/*Create a box for the next columns*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create four columns with the same size that will floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+	}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Define the size of the images*/
+.column img{
+	max-width: 500px;
+	height: 150px;
+	}
+/*define the font and characteristics of the title*/
+p.title{
+	font: bold 20px 'Lucida Handwriting','Brush Script MT', cursive;
+	text-align: justify;
+	margin:00px;
+}
+/*define the characteristics of the paragraph which class is called options*/
+p.options{
+	font-size: 14px;
+  text-align: justify;
+	padding: 00px 0;
+	margin:00px;
+	font-family: Georgia;
+}
+/*Defining the characteristics of the bottom click here, which will change the
+ background and font colour with mouse over*/
+.button2{
+  background-color: #048025 ;
+  padding: 15px 20px;
+  text-align: center;
+	color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+	list-style-type: none;
+	border-radius: 5px;
+	border: 1px solid orange;
+}
+.button2:hover{
+	opacity: 0.8;
+	background-color: #cbf2a7;
+	color: black;
+}
+/*
+Defining the characteristics	of the button nominated included, which will
+hide and show the information bellow using Jquery effect.
+*/
+#included {
+  padding: 5px;
+  text-align: center;
+  padding-bottom: 00px;
+  padding-top: 20px;
+}
+/*Defining the characteristics of the div more, which has the div included1 and cancelation*/
+#more {
+  padding-top: 00px;
+  display: none;
+  text-align: center;
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+/*Create a box which information about what is included
+and defining the characteristics*/
+#included1{
+	border: solid 3px #fa6800;
+	border-radius: 5px;
+	float:left;
+	padding: 20px;
+	width: 40%;
+	height: 50%;
+	margin: 50px;
+	text-align: justify;
+}
+/*Create a box which information about what is the cancelation politic
+and defining the characteristics*/
+#cancelation{
+	border: solid 3px #fa6800;
+	border-radius: 5px;
+	float:left;
+	padding: 20px;
+	width: 40%;
+	height: 50%;
+	margin: 50px ;
+	text-align: justify;
+}
+/*Defining the characteristics of the bottom click here, which will change the
+ background and font colour with mouse over*/
+.button3{
+  background-color:#fa6800;
+  padding: 20px 20px;
+  text-align: center;
+	color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+	list-style-type: none;
+	border-radius: 5px;
+	border: 1px solid  #fa6800 ;
+}
+.button3:hover{
+	opacity: 0.8;
+	background-color: #cbf2a7;
+	color: black;
+}
+/* END PAGE TOUR
+
+
+/* for 980px or less*/
+@media screen and (max-width: 980px) {
+	
+	#content2{
+		width:90%;
+		height:auto;
+		margin:10px;
+	}
+	.column{
+	width: 100%;
+	height: auto;
+	}
+	#more{
+		width: 100%;
+		height: auto;
+	}
+	#included1{
+		width: 100%;
+		height: auto;
+	}
+	#included1{
+	width: 100%;
+	height: auto;
+	margin: 0%;
+	}
+	#cancelation{
+	width: 100%;
+	height: auto;
+	margin: 0%;
+	}
+}

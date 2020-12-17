@@ -1,0 +1,257 @@
+/* ALL CSS FROM GALLERY PAGE*/
+h2{
+	text-align: center;
+	font-family: Georgia;
+}
+/*Adjusting the total width of the list, 
+  the way that the thumbnails will align and the margin values to center the content. */
+.block{
+	width:100%;
+	height:auto;
+}
+/*Defining the size of the thumbnail, the spacing between them is a smoothing effect 
+  when the mouse hovers over the image by zooming in on the box.*/
+.mini_img{
+	width: 250px;
+	height:313px;
+	padding: 10px;
+	margin-left:5%;
+	transition: all linear 0.5s;
+}
+/*Zoom effect on the thumbnail where every time the mouse passes the photo 
+  it becomes black and white.*/
+.mini_img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+/*Hide the photo in full size.*/
+.imgBox{
+	visibility: hidden;
+	opacity: 0;
+}
+/*It defines that every time the thumbnail is clicked, the real image will appear with
+  defined size and with a fixed and centralized position.*/
+.imgBox:target{
+	opacity:1;
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+.boxImg{
+	width: 1000px;
+	margin: 100px auto;
+}
+/*setting border, appearance effect and background color of the image in real size when it appears.*/
+.boxImg img{
+	opacity: 0;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	transition: visibility 0.8s linear, opacity 0.5s linear;
+	margin-left: 10%;
+	background-color: #ededed;
+	position: fixed;
+}
+/*every time you switch from one image to another, a transition effect is applied.*/
+.imgBox:target  .boxImg img{
+	opacity: 1;
+	transition: opacity .4s linear;
+}
+.buttn{
+	color: #e68e22;
+	font-family: Arial;
+	text-decoration: none;
+	position: Absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 35px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	border: 2px solid;
+	border-color: #eda20c;
+	text-align: center;
+	box-shadow: 5px 0px 9px #a6e663;
+	transition: all ease-out .4s;
+	color:#000000;
+    background-color: #e0ebdd;
+}
+.prev{
+	top: 60%;
+}
+.next{
+	right: 20%;
+	top: 60%;
+	float: right;
+}
+.close{
+	top: 10%;
+	right:20%;
+	float: right;
+}
+
+/* ALL CSS FROM CONTACT US PAGE*/
+/*Defining the size of the form box, colors and font.*/
+#Form_ContactUs{
+	float: left;
+	font-size: 17px;
+	font-family: Georgia;
+	background-image: linear-gradient(to bottom, #048025, #62d981);
+	width: 470px;
+	height: 410px;
+	margin-left: 20%;
+	margin-bottom: 20px;
+	padding: 20px 0 20px 20px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	border: 2px solid;
+	border-color: #eda20c;
+}
+/*defines the boxes where customer information will be inserted with a height different
+  from the contact2 class because the comment box is bigger to write more.*/
+.contact1{
+	width: 450px;
+	height: 40px;
+	padding: 10px;
+}
+.contact2{
+	width: 400px;
+	height: 145px;
+	padding: 10px;
+}
+/*apply the border to the information boxes.*/
+input, textarea{
+	width: 200px;
+    padding: 10px;
+    color: black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+/*applying the green shadow effect to the boxes and adding bold effect to the text.*/
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: white;
+    box-shadow: 5px 0px 9px #a6e663;
+    background-color: #cbf2a7;
+    color: black;
+    font-weight: bold;
+}
+.send {
+    background-color: #eda20c;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: white;
+	float: right;
+}
+textarea {
+    width: 300px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+form label {
+    margin-left: 20px;
+    color: #eda20c;
+    font-weight: bold;
+}
+#Icons_contact{
+	width: 350px;
+	height: 400px;
+	float: left;
+	margin-left:10%;
+}
+.contactIcons{
+	padding: 5px;
+	top: 0;
+	left: 1;
+}
+#PhoneContactId{
+	margin-top: 40px;
+	margin-left: 5px;
+}
+#mailContactId{
+	margin-top: 20px;
+	margin-left: 5px;
+}
+#mapContactId{
+	margin-top: 20px;
+	margin-left: 5px;
+}
+.contactIcons label{
+	font-family: Giorgia;
+	font-size: 17px;
+}
+
+
+/* for 1500px or less*/
+@media screen and (max-width: 1500px) {
+	.block{
+		width:80%;
+		height:auto;
+		margin-left:80px;
+	}
+	
+	.imgBox{
+		width:80%;
+		height:auto;
+		margin-left:50px;
+		margin-top:0;
+	}
+	.boxImg img{
+		width: 50%;
+		height:auto;
+	}
+	.contactIcons{
+		float:left;
+		width: 10%;
+		height: auto;
+		margin-left:45%;
+	}
+
+}
+
+/* for 980px or less*/
+@media screen and (max-width: 980px) {
+	#Form_ContactUs{
+		width: 350px;
+		height: 510px;
+		margin:5%
+	}
+	#Icons_contact{
+		margin:0
+	}
+	.contact1{
+		width: 80%;
+		height: auto;
+		margin-left: 0;
+	}
+	.boxImg img{
+		width: 60%;
+		height:auto;
+	}
+	.prev{
+		top: 35%;
+		left:5%;
+	}
+	.next{
+		right: 25%;
+		top: 35%;
+		float: right;
+	}
+	.close{
+		top: 10%;
+		right:25%;
+		float: right;
+	}
+	.buttn{
+		width:15px;
+		height:auto;
+		margin:0;
+		font-size:20px;
+	}
+
+}
