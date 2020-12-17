@@ -304,4 +304,8 @@
 		width:100%;
 		height:fit-content;
 	}
+	.item textarea{/*sets a specif width and height to the item textarea*/
+		width:200px;
+		height:100PX;
+	}
 }
