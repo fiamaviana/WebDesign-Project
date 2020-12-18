@@ -99,6 +99,7 @@ hide and show the information bellow using Jquery effect.
   text-align: center;
   padding-bottom: 00px;
   padding-top: 20px;
+  margin-right: 9%;
 }
 /*Defining the characteristics of the div more, which has the div included1 and cancelation*/
 #more {
@@ -152,8 +153,12 @@ and defining the characteristics*/
 	color: black;
 }
 /* END PAGE TOUR
-
-
+@media screen and (max-width: 1500px) {
+	.column img {
+		width:100%;
+		margin:4px;
+	}
+}
 /* for 980px or less*/
 @media screen and (max-width: 980px) {
 	
