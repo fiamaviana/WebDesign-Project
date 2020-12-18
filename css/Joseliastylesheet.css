@@ -54,9 +54,9 @@ p.about1, p.about2 {text-align:justify;
 }
 /*Define the size of the images*/
 .column img{
-	max-width: 500px;
+	max-width: 300px;
 	height: 150px;
-	}
+}
 /*define the font and characteristics of the title*/
 p.title{
 	font: bold 20px 'Lucida Handwriting','Brush Script MT', cursive;
@@ -152,7 +152,7 @@ and defining the characteristics*/
 	background-color: #cbf2a7;
 	color: black;
 }
-/* END PAGE TOUR
+/* END PAGE TOUR */
 @media screen and (max-width: 1500px) {
 	.column img {
 		width:100%;
