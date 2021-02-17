@@ -1,6 +1,6 @@
 # jjftours.github.io
 
-JJF Tours was my first web page project developed during college.
+JJF Tours was a web page project developed during college in the Web Design module.
 It was developed by me, Fiama, together with two other colleagues: João Vitor and Josélia Reis. We created a fake company called JJF tours based on our initials.
 The proposal was to build a commercial website with at least four pages, but we decided to create six pages. Where I was responsible for developing the homepage and reservations page.
 We planned together and also did a survey to define our client persona, and we also researched other tourism companies in Ireland.
